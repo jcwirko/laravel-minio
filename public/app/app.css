@@ -1,0 +1,34 @@
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 400;
+}
+
+.mandatory-field {
+    color: #007bff;
+}
+
+.well {
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 16%), 0 2px 12px 0 rgb(0 0 0 / 12%);
+}
+
+.has_stock i{
+    font-size: 20px;
+}
+
+.has_stock .fa-check {
+    color: #1ec31e;
+}
+
+.has_stock .fa-times-circle {
+    color: #d91717;
+}
+
+.edit-el-form > i.fa-edit {
+    color: #1c84c6
+}
+
+
+.delete-el-form > i.fa-trash-alt {
+    color: #e41515
+}
+
+
