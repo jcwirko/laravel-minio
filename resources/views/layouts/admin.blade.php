@@ -57,14 +57,14 @@
                                 <i class="fas fa-fw fa-users"></i>
                                 Usuarios
                             </a>
-                            <a class="collapse-item" href="cards.html">
+                           {{-- <a class="collapse-item" href="cards.html">
                                 <i class="far fa-fw fa-id-card "></i>
                                 Roles
                             </a>
                             <a class="collapse-item" href="cards.html">
                                 <i class="far fa-fw fa-hand-paper"></i>
                                 Permisos
-                            </a>
+                            </a>--}}
                         </div>
                     </div>
                 </li>

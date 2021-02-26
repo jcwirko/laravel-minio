@@ -18,4 +18,9 @@ class Product extends Model
         'quantity',
         'total_cost',
     ];
+
+    public function setTotalCostAttribute($value)
+    {
+        $this->attributes['total_cost'] = $this->unit_price * $this->quantity;
+    }
 }

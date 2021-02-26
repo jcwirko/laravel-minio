@@ -30,7 +30,7 @@
                 <tbody>
                 @foreach($users as $user)
                     <tr class="text-center">
-                        <td>{{$user->first_name}} {{$user->last_name}}</td>
+                        <td>{{$user->full_name}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->birthdate}}</td>
                         <td>
