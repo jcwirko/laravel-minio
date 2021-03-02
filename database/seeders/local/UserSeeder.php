@@ -33,6 +33,21 @@ class UserSeeder extends Seeder
         Bouncer::allow(RolesValues::ADMIN['name'])->to(AbilitiesValues::UPDATE_ROLES['name']);
         Bouncer::assign(RolesValues::ADMIN['name'])->to($admin);
 
-        User::factory(15)->create();
+        User::factory(10000)->create();
+        User::factory(10000)->create();
+        User::factory(10000)->create();
+
+        User::create([
+            'first_name' => 'Admin',
+            'last_name' => 'Admin',
+            'birthdate' => '1988-08-16',
+            'email' => 'return@gmail.com',
+            'password' => Hash::make('secret')
+        ]);
+
+        User::factory(10000)->create();
+        User::factory(10000)->create();
+        User::factory(10000)->create();
+
     }
 }

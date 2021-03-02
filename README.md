@@ -1,5 +1,5 @@
 ## Sentry
-Sentry sirve para monitorear la aplicación en tiempo real totalmente útil para cuando se encuentra
+Sirve para monitorear la aplicación en tiempo real totalmente útil para cuando se encuentra
 en producción
 
 ### Repositorio 
