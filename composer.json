@@ -16,6 +16,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "realrashid/sweet-alert": "^3.2",
+        "sentry/sentry-laravel": "^2.3",
         "silber/bouncer": "v1.0.0-rc.10"
     },
     "require-dev": {
