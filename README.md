@@ -1,6 +1,6 @@
 ## Sentry
 Sirve para monitorear la aplicación en tiempo real totalmente útil para cuando se encuentra
-en producción
+en producción, ya que nos da aviso de cuando ocurre una falla como asi también estadísticas de uso.
 
 ### Repositorio 
 
