@@ -1,50 +1,41 @@
 version: '3'
 services:
-    sentry_php:
-        container_name: sentry-php
+    minio_php:
+        container_name: minio-php
         build:
             context: .
             dockerfile: Dockerfile
         volumes:
             - .:/var/www/html
-        networks:
-            - sentry
-        depends_on:
-            - sentry_db
 
-    sentry_nginx:
-      container_name: sentry-nginx
+    minio_nginx:
+      container_name: minio-nginx
       hostname: nginx
       image: nginx:1.19
       restart: unless-stopped
       depends_on:
-        - sentry_php
+        - minio_php
       ports:
-        - '${APP_PORT:-80}:80'
+        - '80:80'
       volumes:
         - .:/var/www/html
         - ./docker/virtualhost.conf:/etc/nginx/conf.d/default.conf
-      networks:
-        - sentry
 
-    sentry_db:
-        container_name: sentry-db
-        image: 'mariadb:10.5.8'
-        restart: always
-        ports:
-            - 3306:3306
-        environment:
-            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
-            MYSQL_DATABASE: '${DB_DATABASE}'
-            MYSQL_USER: '${DB_USERNAME}'
-            MYSQL_PASSWORD: '${DB_PASSWORD}'
-        volumes:
-            - 'sentrymysql:/var/lib/mysql'
-        networks:
-            - sentry
-networks:
-    sentry:
-        driver: bridge
+    minio_db:
+      container_name: minio-db
+      image: postgres:14
+      restart: always
+      environment:
+        POSTGRES_DB: minio
+        POSTGRES_USER: minio-user
+        POSTGRES_PASSWORD: secret
+        PGPASSWORD: secret
+      volumes:
+        - dbminio:/var/lib/postgresql/data
+      ports:
+        - "54321:5432"
+
+
 volumes:
-    sentrymysql:
-        driver: local
+  dbminio:
+    driver: local

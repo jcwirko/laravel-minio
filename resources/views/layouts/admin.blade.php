@@ -27,7 +27,7 @@
         <div id="wrapper">
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('home')}}">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                     <div class="sidebar-brand-icon rotate-n-15">
                         <i class="fab fa-youtube"></i>
                     </div>
@@ -39,7 +39,7 @@
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('home')}}">
+                    <a class="nav-link" href="#">
                         <i class="fas fa-fw fa-home"></i>
                         <span>Home</span>
                     </a>
@@ -53,7 +53,7 @@
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="{{route('users.index')}}">
+                            <a class="collapse-item" href="#">
                                 <i class="fas fa-fw fa-users"></i>
                                 Usuarios
                             </a>
@@ -69,9 +69,9 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('products.index')}}">
+                    <a class="nav-link" href="{{route('cars.index')}}">
                         <i class="fas fa-fw fa-boxes"></i>
-                        <span>Productos</span></a>
+                        <span>Autos</span></a>
                 </li>
 
                 <!-- Divider -->
@@ -102,7 +102,7 @@
                         <ul class="navbar-nav ml-auto">
 
 
-                            <!-- Nav Item - User Information -->
+                            <!-- Nav Item - Car Information -->
                             <li class="nav-item dropdown no-arrow">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -112,7 +112,7 @@
                                         </span>
 
                                 </a>
-                                <!-- Dropdown - User Information -->
+                                <!-- Dropdown - Car Information -->
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                      aria-labelledby="userDropdown">
                                     <a class="dropdown-item" href="#">
