@@ -35,7 +35,20 @@ services:
       ports:
         - "54321:5432"
 
+    minio_storage:
+      container_name: minio-storage
+      image: minio/minio
+      command: server /data --console-address ":9001"
+      ports:
+        - "9001:9001"
+      environment:
+        MINIO_ROOT_USER: minio
+        MINIO_ROOT_PASSWORD: 12345678
+      volumes:
+        - minio-data:/data
+
 
 volumes:
+  minio-data:
   dbminio:
     driver: local
