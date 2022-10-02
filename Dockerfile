@@ -1,4 +1,4 @@
-FROM php:7.4-fpm
+FROM php:8.1.2-fpm
 
 MAINTAINER Juan Blariza
 
@@ -14,7 +14,6 @@ RUN apt-get update && apt-get install -y \
     wget \
     lsb-release \
     libxml2-dev \
-    nginx \
     ca-certificates \
     git \
     nano \
@@ -36,12 +35,9 @@ RUN docker-php-ext-install \
     ctype \
     fileinfo \
     iconv \
-    intl \
     gd \
-    json \
     mbstring \
     pdo_mysql \
-    tokenizer \
     xml \
     pcntl
 

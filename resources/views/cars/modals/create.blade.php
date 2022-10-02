@@ -10,19 +10,19 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{{route('cars.store')}}" role="form" method="POST" id="createFrm">
+                <form action="{{route('cars.store')}}" role="form" method="POST" id="createFrm" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="row">
                         <div class="col-lg-12 form-group">
                             <div>
-                                <label for="first_name" class="form-fields">Modelo</label>
+                                <label for="model" class="form-fields">Modelo</label>
                                 <label class="mandatory-field">*</label>
                                 <input type="text"
-                                       class="form-control {{$errors->has('first_name') ? 'is-invalid' : ''}}"
-                                       name="first_name" id="first_name"
-                                       value="{{old('first_name')}}" placeholder="-">
-                                @if ($errors->has('first_name'))
-                                    <span class="text-danger">{{ $errors->first('first_name') }}</span>
+                                       class="form-control {{$errors->has('model') ? 'is-invalid' : ''}}"
+                                       name="model" id="model"
+                                       value="{{old('model')}}" placeholder="-">
+                                @if ($errors->has('model'))
+                                    <span class="text-danger">{{ $errors->first('model') }}</span>
                                 @endif
                             </div>
                         </div>
