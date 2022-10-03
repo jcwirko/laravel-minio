@@ -26,7 +26,7 @@
                 @foreach($cars as $car)
                     <tr class="text-center">
                         <td>{{$car->model}}</td>
-                        <td><img src="" alt="car-"></td>
+                        <td><img src="{{$car->image_url}}" alt="car"></td>
                     </tr>
                 @endforeach
                 </tbody>
@@ -38,6 +38,12 @@
 
 @push('styles')
     <link rel="stylesheet" href="{{asset('/libs/datatables/dataTables.min.css')}}">
+
+    <style>
+        img{
+            width: 185px;
+        }
+    </style>
 @endpush
 
 @push('scripts')

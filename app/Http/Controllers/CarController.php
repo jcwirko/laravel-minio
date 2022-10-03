@@ -22,7 +22,7 @@ class CarController extends Controller
         $image = $request->file('image');
         $extension = $image->getClientOriginalExtension();
         $fileName = time().Str::random('10').".$extension";
-        $filePath = '/cars/' . $fileName;
+        $filePath = 'cars/' . $fileName;
 
         Storage::put($filePath, file_get_contents($image));
 
