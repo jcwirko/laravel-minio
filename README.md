@@ -1,4 +1,4 @@
-## Sentry
+## MinIo
 Permite guardar objetos en la nube como AWS s3.
 
 ### Repositorio 
@@ -14,3 +14,4 @@ Permite guardar objetos en la nube como AWS s3.
 * Patrones de diseño https://www.youtube.com/playlist?list=PLFXK2lH-VaFzK1Ig2fLQArADCx4pyWXKx
 
 * Canal: https://www.youtube.com/channel/UCUzcO6Wh-xOgIidJdX7I9HA
+
