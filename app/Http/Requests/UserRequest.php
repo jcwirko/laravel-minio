@@ -23,7 +23,7 @@ class UserRequest extends FormRequest
             'first_name' => ['required', 'string'],
             'last_name' => ['required', 'string'],
             'birhdate' => ['nullable', 'date'],
-            'email' => ['required', 'email', "unique:users,email,$id"],
+            'email' => ['required', 'email', "unique:cars,email,$id"],
             'password' => ['required'],
             'roles' => ['required']
         ];

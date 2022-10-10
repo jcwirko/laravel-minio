@@ -2,7 +2,7 @@
 
 namespace Database\Seeders\Local;
 
-use App\Models\User;
+use App\Models\Car;
 use App\Values\AbilitiesValues;
 use App\Values\RolesValues;
 use Illuminate\Database\Seeder;
@@ -13,6 +13,6 @@ class UserSeeder extends Seeder
 {
     public function run()
     {
-        User::factory(10)->create();
+        Car::factory(10)->create();
     }
 }
