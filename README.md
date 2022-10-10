@@ -1,16 +1,15 @@
 ## Sentry
-Sirve para monitorear la aplicación en tiempo real totalmente útil para cuando se encuentra
-en producción, ya que nos da aviso de cuando ocurre una falla como asi también estadísticas de uso.
+Permite guardar objetos en la nube como AWS s3.
 
 ### Repositorio 
 
-* Link: https://github.com/jcwirko/laravel-sentry
+* Link: https://github.com/jcwirko/laravel-minio
 
 * Branch: main
   
 ### Canal de youtube
 
-* Video: https://www.youtube.com/watch?v=jGJ__-RCarw&t=322s
+* Video: https://www.youtube.com/watch?v=1KvyG0yhsic
 
 * Patrones de diseño https://www.youtube.com/playlist?list=PLFXK2lH-VaFzK1Ig2fLQArADCx4pyWXKx
 
